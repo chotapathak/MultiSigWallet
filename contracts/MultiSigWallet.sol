@@ -37,11 +37,6 @@ contract MultiSigWallet is IMSIG{
         _;
     }
 
-    modifier onlyOwner()
-    {
-        require(msg.sender == _owner, 'not an owner');
-        _;
-    }
 // 
     modifier transactionExists(uint transactionId) 
     {
@@ -91,14 +86,14 @@ contract MultiSigWallet is IMSIG{
             required = _required;
         }
     // // This add new owner. then send Transaction should be sent owner Address of new owner
-    // function addOwner(address owner) public onlyWallet ownerDoesNotExist(owner)
-    //     notNull(owner)
-    //     validRequirement(owners.length + 1, required)
-    //     {
-    //         isOwner[owner] = true;
-    //         owners.push(owner);
-    //         emit OwnerAddition(owner);
-    //     }
+    function addOwner(address owner) public onlyWallet ownerDoesNotExist(owner)
+        notNull(owner)
+        validRequirement(owners.length + 1, required)
+        {
+            isOwner[owner] = true;
+            owners.push(owner);
+            emit OwnerAddition(owner);
+        }
 
     // allows to change number of required confirmations
         function changeRequirement(uint _required) 
