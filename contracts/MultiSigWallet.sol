@@ -72,7 +72,7 @@ contract MultiSigWallet is IMSIG{
     // Contract constructor sets initial owners and required number of confirmation
     // _owners list of initial owners.
     // _required number of required confirmations
-    constructor(address[] memory _owners, uint _required)
+    constructor(address[] memory _owners, uint _required) payable
         
         validRequirement(_owners.length, _required)
         {

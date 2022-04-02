@@ -1,9 +1,18 @@
-# Basic Sample Hardhat Project
+# MultiSig wallet
+This will support multi-signature for transfer funds 
+and more feature will be added in future
+## With Hardhat and Truffle
+This project demonstrates multiSignature use case. It has contract, a test for that contract, a sample script that deploys that contract. 
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, a sample script that deploys that contract, and an example of a task implementation, which simply lists the available accounts.
+### Steps to follow
+```
+git clone this repo
+cd to folder
+npm install
 
-Try running some of the following tasks:
+```
 
+#### Try running some of the following tasks:
 ```shell
 npx hardhat accounts
 npx hardhat compile

@@ -50,7 +50,7 @@ contract multisig {
     }
     // now we can use this to create public account from another contract
     DepData[] public newAccounts;
-    // 
+    mapping(uint => DepData) public firstdata;
     DepData public devData;
 
 
