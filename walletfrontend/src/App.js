@@ -1,11 +1,16 @@
 
 import "./App.css";
-import Nav from "./components/Nav";
+import Wallet from "./components/Wallet";
+// import Nav from "./components/Nav";
+// import Contract from "./Contract";
+import Multisig from "./MultiSignerWallet";
+
 function App() {
   return (
     <div className="App">
       
-      <Nav/>
+      {/* <Multisig/> */}
+      {/* <Contract/> */}
       {/* <Wallet/> */}
       {/* <Cconverter/> */}
   

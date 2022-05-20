@@ -3,6 +3,7 @@ import Card from "@mui/material/Card";
 import Button from "@mui/material/Button";
 import "../App.css";
 import Wallet from "./Wallet";
+import NavBar from "./NavBar";
 
 function Nav() {
   const [wallets, setWallet] = useState([]);
@@ -16,17 +17,16 @@ function Nav() {
     fetcher();
   }, []);
 
-  const GnosisNav = {
-    fontSize: "18px",
-    height: "30px",
-    backgroundColor: "orange",
-    topLeft: "20%"
+  const NavStyle = {
+    fontSize: "21px",
+    backgroundColor: "black",
   };
 
   return (
     <div className="App">
-      <div>
-        <ul>
+      <NavBar/>
+      <div style={{}}>
+        <ul style={NavStyle}>
           <li>
           <a className="brand-logo">
         <i class="wallet-icons">Logo</i>
@@ -45,39 +45,11 @@ function Nav() {
           </li>
           
           <li  style={{  margin: "14px 16px"}} className="networks">
-            <Wallet/>
+            
           </li>
+          
         </ul>
-        
-      </div>
-      <div className="Card">
-
-      <Card style={{padding: "30px"}}>
-        <h3>Create Wallet</h3>
-        <h5> Decsribption of steps to create</h5>
-        <div style={{margin: "30px"}}>
-          <div>
-            <div style={{paddingTop: "3vh"}} className="create">
-              <h3> Create</h3>
-              <p> this is how to create</p>
-              <div>
-                <a>
-                  <span>Click to create</span>
-                </a>
-              </div>
-            </div>
-            <div className="import" style={{paddingLeft: '30 20vh'}}>
-              <h3> Import wallet</h3>
-              <p> this is how to import wallet</p>
-              <div>
-                <a>
-                  <span>Click to import</span>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </Card>
+        {/* <Wallet/> */}
       </div>
     </div>
   );

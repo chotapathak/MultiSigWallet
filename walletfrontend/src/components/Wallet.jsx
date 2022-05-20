@@ -52,6 +52,37 @@ function Wallet() {
 
   return (
     <div className="wallet">
+
+<div className="Card">
+
+<Card style={{padding: "30px"}}>
+  <h3>Create Wallet</h3>
+  <h5> Decsribption of steps to create</h5>
+  <div style={{margin: "30px"}}>
+    <div>
+      <div style={{paddingTop: "3vh"}} className="create">
+        <h3> Create</h3>
+        <p> this is how to create</p>
+        <div>
+          <a>
+            <span>Click to create</span>
+          </a>
+        </div>
+      </div>
+      <div className="import" style={{paddingLeft: '30 20vh'}}>
+        <h3> Import wallet</h3>
+        <p> this is how to import wallet</p>
+        <div>
+          <a>
+            <span>Click to import</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</Card>
+</div>
+
       {/* Calling all values which we
 	have stored in usestate */}
       <div className="connect-button">
@@ -66,22 +97,6 @@ function Wallet() {
           <strong> Address: </strong>
           {data.address}
         </Card>
-      </div>
-      <div
-        style={{ margin: "20px", padding: "20px" }}
-        className="create-container"
-      >
-        <select
-          id="token"
-          name="currency"
-          onChange={onRadioChange}
-          value={radioValue}
-        >
-          <option value="mainnet">Mainnet-Ethereum</option>
-          <option value="testnet">Rinkeby</option>
-          <option value="ada">Cardano</option>
-          <option value="local">Local</option>
-        </select>
       </div>
     </div>
   );
