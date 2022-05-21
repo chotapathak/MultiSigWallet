@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import multiSig from "./multisig.json";
 import { ethers } from "ethers";
-// import { NavBar } from "./NavBar";
-import Nav from "./components/Nav";
+
+// import Nav from "./components/Nav";
 // import { Wall } from "./Body";
 // import { useEffect } from "react";
 // import Typography from "@mui/material/Typography";
@@ -164,8 +164,7 @@ export default function Multisig () {
 
   return (
     <div>
-
-      <Nav
+      <NavBar
         walletAddress={walletAddress}
         isLoading={isLoading}
         handleDisconnectToWallet={handleDisconnectToWallet}
@@ -214,17 +213,13 @@ export default function Multisig () {
               fontWeight: "bold",
             }}
           >
-            Connect to MetaMask
+            
           </span>
-          <br />
-          <img
-            style={{ width: "300px" }}
-            src="./metamask.png"
-            alt="No Display"
-          />
+          
         </div>
       ) : (
           <h1>Body</h1>
+          
         // <Wall/>
         //   isEntaracting={isEntaracting}
         //   owners={owners}
@@ -235,7 +230,7 @@ export default function Multisig () {
         //   handleApproveTransaction={handleApproveTransaction}
         // />
       )}
-      <Wallet/>
+    <Wallet/>
     </div>
   );
 };

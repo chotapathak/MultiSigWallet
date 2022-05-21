@@ -4,10 +4,14 @@ import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 import IconButton from "@mui/material/IconButton";
-
+// import Wallet from "./Wallet";
 import Button from "@mui/material/Button";
 
 // import ReplayIcon from "@mui/icons-material/Replay";
+const NavStyle = {
+  fontSize: "21px",
+  backgroundColor: "#0d160e",
+};
 
 export default function NavBar (
     walletAddress,
@@ -31,11 +35,12 @@ export default function NavBar (
           <Typography
             variant="h4"
             component="div"
-            sx={{ fontSize: "21px", color: "#a29688" }}
+            sx={{ fontSize: "61px", color: "#f1860c",fontFamily:'fantasy' }}
           >
-            𝓜𝓾𝓵𝓽𝓲 𝓢𝓲𝓰𝓷𝓮𝓻 𝓦𝓪𝓵𝓵𝓮𝓽
+           <b style={{padding:'30px'}}> Sig Wallet </b>
           </Typography>
 
+          
           <div>
             <IconButton
               size="large"
@@ -52,7 +57,7 @@ export default function NavBar (
                 color="secondary"
                 // startIcon={<ReplayIcon />}
               >
-                Refresh
+                Connect
               </Button>
             </IconButton>
             <IconButton
@@ -76,8 +81,37 @@ export default function NavBar (
               </Button>
             </IconButton>
           </div>
+
+          
         </Toolbar>
+        
       </AppBar>
+      <div style={NavStyle}>
+        <ul style={NavStyle}>
+          <li>
+          <a className="brand-logo">
+        <i class="wallet-icons">Logo</i>
+        </a>
+          </li>
+          <li>
+            <a className="home" href="#home">
+              Home
+            </a>
+          </li>
+          <li>
+            <a href="#accounts">Accounts</a>
+          </li>
+          <li>
+            <a href="#balance">History</a>
+          </li>
+          
+          <li  style={{  margin: "14px 16px"}} className="networks">
+            
+          </li>
+          
+        </ul>
+        
+      </div>
     </Box>
   );
 };
