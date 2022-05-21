@@ -1,70 +1,64 @@
-# Getting Started with Create React App
+# MultiSig wallet
+<h1 align="center">
+  <img alt="MultiSig logo" src="https://media.istockphoto.com/photos/crystal-ethereum-symbol-picture-id1395994251?k=20&m=1395994251&s=612x612&w=0&h=w-KJYyF2L4netG_Ued9I3ZY_sqFXOclTVxSsr4R6fA0=" width="224px"/><br/>
+  MultiSig Wallet 
+  <br/>
+<br/>
+</h1>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<p align='center'>
+This will support multi-signature for transfer funds 
+and more feature will be added in future
+## With Hardhat and Truffle
+This project demonstrates multiSignature use case. It has contract, a test for that contract, a sample script that deploys that contract. 
+</p>
 
-## Available Scripts
 
-In the project directory, you can run:
+##  [🐳 Demo]()
 
-### `npm start`
+## 🔧 Tech Stack 
+<p align="center">
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+<img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5"/>
+<img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3"/>
+<img src="https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E" alt="JavaScript"/>
+<img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React"/>
+<img src="https://img.shields.io/badge/NodeJS-3F6E1F?style=for-the-badge&logo=nodejs&logoColor=white" alt="NodeJS"/>
+<img src="https://img.shields.io/badge/Git-E34F26?style=for-the-badge&logo=git-square&logoColor=white" alt="Git"/>
+<br/>
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+<img src="https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white" alt="vercel"/>
+</p>
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 📃 Table of contents
+- [Installation](#installation)
+    - [Setup frontend](#setup-frontend)
+- [Commands](#⚙-commands)
+- [Contributor](#👨🏻‍💻-contributor)
 
-### `npm run build`
+## 📥 Installation
+- Start by cloning the repo with following command
+```
+git clone https://github.com/chotapathak/MultiSigWallet.git
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 🔗 Setup Frontend
+- Install dependencies with following command
+```
+cd MultiSigWallet/WalletFrontend
+npm install
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 🤖 Commands
+Use following command for starting the server locally
+```
+npm start
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 👨🏻‍💻 Contributor
+- ## [Vikash Pathak](https://www.linkedin.com/in/vikash-pathak-298a01183/?originalSubdomain=in)
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
